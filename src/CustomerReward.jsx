@@ -7,6 +7,7 @@ import MonthlyReward from './MonthlyReward';
 import { countReward, getMonth } from './utils';
 import Select from 'react-select';
 
+
 const Styles = styled.div`
   padding: 1rem;
 
