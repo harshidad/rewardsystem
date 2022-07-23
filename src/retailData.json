@@ -1,0 +1,70 @@
+{
+    "RetailData": [
+    {
+        "custId": 2,
+        "custName":"Mike",
+        "purchaseDate":"2022-07-20T12:00:00Z",
+        "PurchaseAt": "Safeway, CA",
+        "Amount":150
+    },
+    {
+        "custId": 2,
+        "custName":"Jose",
+        "purchaseDate":"2022-07-20T12:00:00Z",
+        "PurchaseAt": "Nirvana, CA",
+        "Amount":150
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-07-20T12:00:00Z",
+        "PurchaseAt": "Target, CA",
+        "Amount":10
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-07-15T12:00:00Z",
+        "PurchaseAt": "Ross, CA",
+        "Amount":200
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-07-15T12:00:00Z",
+        "PurchaseAt": "Walmart, CA",
+        "Amount":100
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-07-15T12:00:00Z",
+        "PurchaseAt": "Sprouts, CA",
+        "Amount":120
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-06-15T12:00:00Z",
+        "PurchaseAt": "Peets Coofee, CA",
+        "Amount":120
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-05-15T12:00:00Z",
+        "PurchaseAt": "Starbucks, CA",
+        "Amount":100
+    },
+    {
+        "custId": 1,
+        "custName":"John",
+        "purchaseDate":"2022-04-15T12:00:00Z",
+        "PurchaseAt": "Dish n Dash, CA",
+        "Amount":200
+    }
+  ]
+}
+
+
+
