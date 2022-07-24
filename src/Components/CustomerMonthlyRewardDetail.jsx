@@ -1,8 +1,8 @@
 
 import React, { useMemo } from 'react';
-import { countReward, getMonth, Table } from './utils';
-import jsonData from './retailData'
-import { Styles } from './Styled';
+import { countReward, getMonth, Table } from '../utils';
+import jsonData from '../retailData';
+import { Styles } from '../Styled';
 
 
 function CustomerMonthlyRewardDetail(props) {
@@ -55,7 +55,7 @@ function CustomerMonthlyRewardDetail(props) {
       </Styles>
       <div style={{textAlign:"left", margin: '15px'}}>Total Spent Amount is : {totalReward}</div>
       <div style={{textAlign:"left", margin: '15px'}}>
-        <input type="button" value="Back" title="Back" onClick={backToCustomerSummary} />
+        <input style={{height:'30px',backgroundColor:'#5bccf6',color:'#FFF',width:'100px',border:'1px solid #FFF'}}  type="button" value="Back" title="Back" onClick={backToCustomerSummary} />
         </div>
     </div>
     </>
