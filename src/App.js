@@ -1,11 +1,11 @@
 import './App.css';
-import CustomerReward from './CustomerReward';
+import CustomerRewardSummary from './CustomerRewardSummary';
 
 
 function App() {
   return (
     <div className="App">
-      <CustomerReward/>
+      <CustomerRewardSummary/>
     </div>
   );
 }
