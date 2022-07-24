@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react'
-import jsonData from './retailData'
+import jsonData from '../retailData'
 import CustomerMonthlyRewardDetail from './CustomerMonthlyRewardDetail';
-import { countReward, getMonth, Table } from './utils';
+import { countReward, getMonth, Table } from '../utils';
 import Select from 'react-select';
-import { Styles } from './Styled';
+import { Styles } from '../Styled';
 
 function CustomerRewardSummary() {
   
@@ -91,7 +91,7 @@ function CustomerRewardSummary() {
             Header: 'Detail',
             accessor: ' ',
             Cell: ({row}) => (<div>
-              <button onClick={()=>MonthlyDetail({row})}>Detail</button>
+              <button style={{height:'30px',backgroundColor:'#5bccf6',color:'#FFF',width:'100px',border:'1px solid #FFF'}} onClick={()=>MonthlyDetail({row})}>Detail</button>
              </div> )
           }
         ],
@@ -108,16 +108,31 @@ function CustomerRewardSummary() {
     return rec += val.TransactionReward;
   },0);
 
+  const customStyles = {
+    control: () => ({
+      // none of react-select's styles are passed to <Control />
+      width: 300,
+      display: 'flex',
+      background: '#FFF',
+      marginLeft: 20,
+      marginTop: 10,
+    })
+  }
+
   return (
     <>
     {isMonthlyDetailTable &&
     <div style={{textAlign:"left", margin: '15px'}}>
-      
+      <div>
+      <span style={{fontWeight:600, padding:"0 20px"}}>Selct Customer</span>
       <Select
+          styles={customStyles}
           options={customers}
           defaultValue={selectedcustomer}
           onChange={onCustomerChangeHandler}
+          
         />
+        </div>
       <Styles>
         <Table  columns={columns} data={data} />
       </Styles>
