@@ -24,11 +24,11 @@ You may also see any lint errors in the console.
 1. http://localhost:3000 to view application in browser.
 2. It load the customers reward summary page based on data fetch from Json.
 3. For the selected customer, monthly received summary reward display, based on amount spent by customer on particular month. 
+    NOTE : User can select the customer from the dropdown.
 4. From current date to last 3 months span, customer reward detail display here.
-5. By clicking on Detail button, cutomer detail transaction display for that particular month.
-6. By clicking on back button,  user can view the transaction summary.
-
-
+5. By clicking on Detail button, customer detail transaction display for that particular month. 
+    NOTE : Reward calculation is done by amount spent by customer for each transaction. Not based on total amount spent by customer in particular month. 
+7. By clicking on back button,  user can view the transaction summary.
 
 
 ### `npm test`
