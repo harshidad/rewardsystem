@@ -9,6 +9,12 @@ function CustomerMonthlyRewardDetail(props) {
   const { seletedUserInfo, backToCustomerSummary } = props;
 
   const { Month, UserName} = seletedUserInfo;
+
+  const formatDate = (currentRow) => {
+    const date =  new Date(currentRow.original.purchaseDate);
+    return ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear();
+  }
+
   const columns = React.useMemo(
     () => [
       {
@@ -17,10 +23,7 @@ function CustomerMonthlyRewardDetail(props) {
           {
             Header: 'Purchase Date',
             accessor: 'purchaseDate',
-          },
-          {
-            Header: 'Purshase Store',
-            accessor: 'PurchaseAt',
+            Cell: ({row}) => (<div>{formatDate(row)}</div> )
           },
           {
             Header: 'Amount',
