@@ -19,10 +19,23 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### Steps to test the application
+
+1. http://localhost:3000 to view application in browser.
+2. It load the customers reward summary page based on data fetch from Json.
+3. For the selected customer, monthly received summary reward display, based on amount spent by customer on particular month. 
+4. From current date to last 3 months span, customer reward detail display here.
+5. By clicking on Detail button, cutomer detail transaction display for that particular month.
+6. By clicking on back button,  user can view the transaction summary.
+
+
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 
 ### `npm run build`
 
