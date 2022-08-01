@@ -1,4 +1,4 @@
-import { useTable } from 'react-table'
+
 //calculate the reward point based on amount spent by customer
 export const countReward = (value) => {
     if(value < 50){
@@ -19,48 +19,4 @@ export const countReward = (value) => {
     return month;
   }
 
-  // export const groupBy = (xs, key) => {
-  //   return xs.reduce(function(rv, x) {
-  //     (rv[x[key]] = rv[x[key]] || []).push(x);
-  //     return rv;
-  //   }, {});
-  // };
-
-  export const Table = ({ columns, data }) => {
-    // Use the state and functions returned from useTable to build your UI
-    const {
-      headerGroups,
-      rows,
-      prepareRow,
-    } = useTable({
-      columns,
-      data,
-    })
-    
-    // Render the UI for your table
-    return (
-      <table >
-        <thead>
-          {headerGroups.map(headerGroup => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map(column => (
-                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody>
-          {rows.map((row, i) => {
-            prepareRow(row)
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map(cell => {
-                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                })}
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    )
-  }
+  
