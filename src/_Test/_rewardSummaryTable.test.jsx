@@ -21,16 +21,16 @@ const selectedRow = jest.fn();
 
 test('Reward Summary Table Render', () => {
   const { getByText } = render(<RewardSummaryTable selectedRow={selectedRow} selectedCustomer={selectedCustomer} retailUserData={retailUserData} />);
-  getByText("Customer Name"); // queries inside baseElement (which usually means document.body)
-  screen.getByText("Customer Name"); // queries inside document.body
+  getByText("Customer Name"); 
+  screen.getByText("Customer Name"); 
 });
 
 test('clicking the Detail button', () => {
   const { getByText } =  render(<RewardSummaryTable selectedRow={selectedRow} selectedCustomer={selectedCustomer} retailUserData={retailUserData} />);
   const button = screen.getByRole('button')
   fireEvent.click(button)
-  getByText("Detail"); // queries inside baseElement (which usually means document.body)
-  screen.getByText("Detail"); // queries inside document.body
+  getByText("Detail"); 
+  screen.getByText("Detail"); 
 })
 
 

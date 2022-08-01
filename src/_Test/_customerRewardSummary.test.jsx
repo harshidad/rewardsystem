@@ -27,7 +27,7 @@ test('Customer Reward Summary component render', () => {
     screen.getByText("Select Customer"); // queries inside document.body
   });
 
-  test('Customer Reward Summary component render', () => {
+  test('Customer Reward Summary component render detail table', () => {
     
     const { getByText } = render(<CustomerRewardSummary isDetailTableVisible={true} selectedRow={selectedRow} selectedCustomer={selectedCustomer} retailUserData={retailUserData} />);
     getByText("Select Customer"); // queries inside baseElement (which usually means document.body)
